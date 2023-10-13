@@ -1,0 +1,11 @@
+- var classs = ''
+- var nameemail = ''
+- var ids1 = ''
+- var ids2 = ''
+mixin form(classs, nameemail, ids1, ids2)
+  label.labeltop(class="" + `${classs}__label` class="" + `${classs}__labeltop` for="" + ids1 aria-label="Имя")
+    span.preset.labeltext(class="" + `${classs}__labeltext`) Имя
+    input.input(class="" + `${classs}__input` type="text" id="" + ids1 name="name" placeholder="Имя" required)
+  label.labeltop(class="" + `${classs}__label` class="" + `${classs}__labeltop` for="" + ids2 aria-label="email")
+    span.preset.labeltext(class="" + `${classs}__labeltext`) Email
+    input.input(class="" + `${classs}__input` type="email" id="" + ids2 name="email" placeholder="" + nameemail  required)
